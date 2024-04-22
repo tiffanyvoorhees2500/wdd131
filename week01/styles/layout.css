@@ -1,7 +1,6 @@
 
 body{
     display: grid;
-    height: 100vh;
     grid-template: auto 1fr auto / 2fr 1fr;
 
     max-width: 960px;
@@ -10,31 +9,32 @@ body{
 }
 
 header{
-    background:darkgray;
-    padding: 2rem;
+    background: #1199ab;
     grid-column: 1/4;
-    color:antiquewhite;
+    color:white;
+}
+
+header h1,p{
+    padding: .5rem;
 }
 
 main{
-    background: gray;
+    background: darkgray;
     grid-column: 1/2;
+    padding: .5rem;
 }
 
 aside{
     grid-column: 2/3;
+    padding: .5rem;
 }
 
 footer{
-    background: black;
-    padding: 2rem;
+    background: #1199ab;
+    padding: .5rem;
     text-align: center;
     grid-column: 1/4;
-}
-
-nav{
-    margin: 0 auto 2rem;
-    max-width: 90vw;
+    color:white;
 }
 
 .navigation{
@@ -50,7 +50,7 @@ nav{
 
 .navigation a{
     display:block;
-    color:antiquewhite;
+    color:white;
     padding: 0.75rem;
     text-decoration: none;
 }
@@ -58,7 +58,7 @@ nav{
 .navigation a:hover{
     font-weight: 700;
     text-decoration: underline;
-    text-decoration-color: yellow;
+    text-decoration-color: #1199ab;
 }
 
 .wrap{
