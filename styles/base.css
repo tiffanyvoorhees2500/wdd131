@@ -82,7 +82,7 @@ nav a:hover{
 
 main{
     display: grid;
-    grid-template: 1fr auto;
+    grid-template-columns: 75% 25%;
 }
 
 
