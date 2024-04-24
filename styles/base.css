@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap');
 
 :root{
-    --primary-color: #084B83;
-    --secondary-color: #42BFDD;
-    --accent1-color: #BBE6E4;
-    --accent2-color: #F0F6F6;
+    --primary-background: #084B83;
+    --primary-accent: #E7B6C2;
+
+    --secondary-background: #F2F5EA;
+    --secondary-accent: #B54660;
     
     --heading-font: 'Bree Serif', serif;
     --paragraph-font: 'Raleway', sans-serif;
 
-    --nav-background-color: #42BFDD;
-    --nav-link-color: #F0F6F6;
-    --nav-hover-link-color:#BBE6E4;
-    --nav-hover-background-color: #BBE6E4;
+    /* --primary-background: #084B83; */
+    /* --accent1-color: #CCEBEB; */
+
+    /* --secondary-background: #42BFDD; */
+    /* --accent2-color: black; */
+    
+
+    /* --nav-background-color: #42BFDD; */
+    /* --nav-link-color: #F0F6F6; */
+    /* --nav-hover-link-color:#BBE6E4; */
+    /* --nav-hover-background-color: #BBE6E4; */
 }
 
 body{
@@ -25,12 +33,12 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: var(--primary-accent);
 }
 
 header{
     padding-top: 10px;
-    background-color: var(--primary-color);
+    background-color: var(--primary-background);
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -49,7 +57,7 @@ p{
 }
 
 nav{
-    background-color: var(--nav-background-color);
+    background-color: var(--secondary-background);
     font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
@@ -57,19 +65,19 @@ nav{
 
 nav a{
     display: block;
-    color: var(--nav-link-color);
+    color: var(--secondary-accent);
     text-decoration: none;
     padding: 1rem;
     flex: 1 1 100%;
 }
 
 nav a:link, nav a:visited{
-    color:var(--nav-hover-link-color);
+    color:var(--secondary-accent);
 }
 
 nav a:hover{
-    color:var(--nav-hover-color);
-    background-color: var(--nav-hover-background-color);
+    color:var(--primary-accent);
+    background-color: var(--primary-background);
 }
 
 main{
@@ -87,7 +95,7 @@ main{
 
 .card{
     flex-wrap: wrap;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--primary-background);
     border-radius: 5px;
     margin: .8rem;
 }
@@ -95,7 +103,7 @@ main{
 .card-header{
     display: flex;
     justify-content: center;
-    background: var(--primary-color);
+    background: var(--primary-background);
 }
 
 .interest-list{
@@ -118,9 +126,21 @@ hr{
 }
 
 .primary-color-text{
-    color: var(--primary-color)
+    color: var(--primary-background)
 }
 
+footer{
+    background: var(--primary-background);
+    color: var(--secondary-background);
+}
+
+#lastModified{
+    color:var(--primary-accent);
+}
+
+.no-margin-para{
+    margin:0;
+}
 
 
 
