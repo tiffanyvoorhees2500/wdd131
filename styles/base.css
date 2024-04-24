@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap');
+
+:root{
+    --primary-color: #084B83;
+    --secondary-color: #42BFDD;
+    --accent1-color: #BBE6E4;
+    --accent2-color: #F0F6F6;
+    
+    --heading-font: 'Bree Serif', serif;
+    --paragraph-font: 'Raleway', sans-serif;
+
+    --nav-background-color: #42BFDD;
+    --nav-link-color: #F0F6F6;
+    --nav-hover-link-color:#BBE6E4;
+    --nav-hover-background-color: #BBE6E4;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+header{
+    padding-top: 10px;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+header h1, nav{
+    grid-column: 1/4
+}
+
+p{
+    padding: 5px;
+}
+
+nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+    flex: 1 1 100%;
+}
+
+nav a:link, nav a:visited{
+    color:var(--nav-hover-link-color);
+}
+
+nav a:hover{
+    color:var(--nav-hover-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+main{
+    display: flex;
+}
+
+.card-about, aside{
+    margin: 1rem;
+    display: flex;
+}
+
+#interests{
+    flex: 0 0 200px;
+}
+
+.card{
+    flex-wrap: wrap;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    margin: .8rem;
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+    background: var(--primary-color);
+}
+
+.interest-list{
+    list-style-type: square;
+}
+
+#profilePic, #stateFlag{
+    min-width:200px;
+    max-height: 300px;
+    width: 25%;
+    height: auto;
+}
+
+.interest-list li{
+    text-align: left;
+}
+
+hr{
+    width: 75%;
+}
+
+.primary-color-text{
+    color: var(--primary-color)
+}
+
+
+
+
+
+
+
