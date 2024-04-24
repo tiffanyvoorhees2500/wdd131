@@ -81,29 +81,37 @@ nav a:hover{
 }
 
 main{
-    display: flex;
+    display: grid;
+    grid-template: 1fr auto;
 }
 
-.card-about, aside{
+
+.card{
+    border: 2px solid var(--primary-background);
+    border-radius: 5px;
+    margin: .8rem;
+}
+
+#card-about{
+    grid-column: 1/2;
+}
+
+#card-about, aside{
     margin: 1rem;
     display: flex;
 }
 
-#interests{
+#card-interests{
+    grid-column: 2/3;
     flex: 0 0 200px;
-}
-
-.card{
-    flex-wrap: wrap;
-    border: 2px solid var(--primary-background);
-    border-radius: 5px;
-    margin: .8rem;
+    
 }
 
 .card-header{
     display: flex;
     justify-content: center;
     background: var(--primary-background);
+    padding: 0px 10px;
 }
 
 .interest-list{
