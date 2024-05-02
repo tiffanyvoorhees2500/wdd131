@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway&display=swap');
+
+:root{
+    --heading-font: "Bree Serif", serif;
+    --paragraph-font: "Raleway", sans-serif;
+
+    --primary-background: black;
+    --primary-accent: white;
+
+    --secondary-background: #99E1D9;
+    --secondary-accent: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--primary-background);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    padding: .5rem;
+}
+
+h1{
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+header{
+    background-color: var(--secondary-background);
+    color: var(--secondary-accent);
+}
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+
+.navigation a{
+    display: none;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--secondary-accent);
+}
+
+.navigation a:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+#menu{
+    font-size: 1.5rem;
+    border:0;
+    background: none;
+    color: var(--secondary-accent);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    content: "☰";
+}
+
+#menu::before{
+    content: "☰";
+}
+
+#menu.open::before{
+    content: "❎";
+}
+
+.open a{
+    display: block;
+}
+
+.active::before{
+    content: "❤️";
+}
+
+.container{
+    display: grid;
+    gap: .8rem;
+    margin: 1rem;
+    grid-template: 1fr;
+}
+
+figure{
+    background-color: var(--primary-accent);
+    padding: 1rem;
+    color: var(--primary-background);
+    font-weight: bold;
+}
+
+
+figcaption{
+    font-size:smaller;
+    padding: .75rem;
+}
+
+footer{
+    background: var(--secondary-background);
+    color: var(--secondary-accent);
+    padding: 1rem;
+    font-size: larger;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+
+
