@@ -110,6 +110,11 @@ figure{
     font-weight: bold;
 }
 
+figure img{
+    width: 100%;
+    height: auto;
+}
+
 
 figcaption{
     font-size:smaller;
