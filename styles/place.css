@@ -6,7 +6,7 @@
 
     /* The official colors for Washington DC are as follows: */
     --light-color: #FFFFFF;
-    --accent-color: #E81B39;
+    --accent-color: #A21026;
     --dark-color: #000000;
 }
 
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
     padding: .5rem;
     background-color: var(--accent-color);
-    color: var(--dark-color)
+    color: var(--light-color)
 }
 
 header{
@@ -54,10 +54,9 @@ main{
 
 footer{
     background-color: var(--accent-color);
-    color: var(--dark-color);
+    color: var(--light-color);
     padding: 1rem;
     font-weight: bold;
-    font-size:1.2rem;
 }
 
 table{
