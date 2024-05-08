@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tiffany Voorhees">
+    <meta name="description" content="WDD 131- Place that I served my mission">
+
+    <title>WDD 131 | Tiffany Voorhees | Washington DC</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/place.css">
+    <link rel="stylesheet" type="text/css" href="styles/place-md.css">
+    <link rel="stylesheet" type="text/css" href="styles/place-lg.css">
+</head>
+<body>
+    <header>
+        <h1>Washington DC</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <!-- <source srcset="images/place/washingtondc-hero-lg.webp" media="(min-width: 1090px)"> -->
+                <source srcset="images/place/washingtondc-hero-lg.webp" media="(min-width: 724px)">
+                <img src="images/place/washingtondc-16 to 9 ratio.webp" alt="Washington DC" width="360" height="200">
+            </picture>
+            <section id="data-section">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>68.35 mi²</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>671,803</td>
+                    </tr>
+                    <tr>
+                        <th>Capitol of:</th>
+                        <td>United States of America</td>
+                    </tr>
+                    <tr>
+                        <th>Language:</th>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>US Dollar</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone:</th>
+                        <td>UTC/GMT-4</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code:</th>
+                        <td>+202 and +771</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD:</th>
+                        <td>.us</td>
+                    </tr>                
+                </table>
+            </section>
+            <section id="weather-section">
+                <h2 id="weather-title">Weather</h2>
+                <img id="weather-icon" src="images/place/weather-icon.svg" alt="Weather Icon">
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td><span id="temperature">83</span> <span id="temp-unit">℉</span></td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td>Partly Cloudy</td>
+                    </tr> 
+                    <tr>
+                        <th>Wind:</th>
+                        <td><span id="wind">10</span> <span id="wind-unit">mph</span></td>
+                    </tr> 
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td id="wind-chill"></td>
+                    </tr>  
+                </table>
+            </section> 
+        </div>
+    </main>
+    <footer>
+        <p class="no-margin-para">
+            ©️<span id="currentyear"></span> 💎 Tiffany Voorhees 💎 Utah
+        </p>
+        <p  class="no-margin-para" id="lastModified">
+
+        </p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
