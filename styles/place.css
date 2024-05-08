@@ -6,7 +6,8 @@
 
     /* The official colors for Washington DC are as follows: */
     --light-color: #FFFFFF;
-    --dark-color: #E81B39;
+    --accent-color: #E81B39;
+    --dark-color: #000000;
 }
 
 *{
@@ -27,13 +28,13 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
     padding: .5rem;
-    background-color: var(--dark-color);
-    color: var(--light-color)
+    background-color: var(--accent-color);
+    color: var(--dark-color)
 }
 
 header{
     background-color: var(--light-color);
-    color: var(--dark-color);
+    color: var(--accent-color);
 }
 
 main{
@@ -52,10 +53,11 @@ main{
 }
 
 footer{
-    background-color: var(--dark-color);
-    color: var(--light-color);
+    background-color: var(--accent-color);
+    color: var(--dark-color);
     padding: 1rem;
     font-weight: bold;
+    font-size:1.2rem;
 }
 
 table{
@@ -76,5 +78,5 @@ tr{
 }
 
 section{
-    border-top: 1px solid var(--dark-color);
+    border-top: 1px solid var(--accent-color);
 }

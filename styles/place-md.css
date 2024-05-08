@@ -3,7 +3,7 @@
         font-size: 1rem;
         text-align: left;
         background-color: var(--light-color);
-        color: var(--dark-color);
+        color: var(--accent-color);
         margin-right: 2rem;
     }
 
@@ -12,7 +12,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: var(--light-color);
-        color: var(--dark-color);
+        color: var(--accent-color);
         margin-right: 1rem
     }
 
@@ -32,7 +32,7 @@
     section{
         background-color: rgba(0,0,0,0.8);
         position:absolute;
-        color: var(--dark-color);
+        color: var(--light-color);
     }
 
     #data-section{
