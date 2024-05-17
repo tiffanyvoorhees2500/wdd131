@@ -26,6 +26,11 @@ menuitems.forEach(element => {
     element.addEventListener("click", () => {
         document.querySelector(".active").classList.remove("active");
         element.classList.add("active");
+        if(element.firstChild.textContent == "Home"){
+          document.getElementById("page-title").textContent = "All Temples";
+        }else{
+          document.getElementById("page-title").textContent = element.firstChild.textContent + " Temples";
+        }
     });
 });
 homeLink.addEventListener("click",() => {

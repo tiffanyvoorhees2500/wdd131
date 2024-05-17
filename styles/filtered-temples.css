@@ -93,7 +93,7 @@ header{
 }
 
 .active{
-    text-decoration: underline;
+    font-weight: bolder;
     font-size:large;
 }
 
