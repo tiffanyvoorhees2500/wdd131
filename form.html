@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tiffany Voorhees">
+    <meta name="description" content="WDD 131 creating a form for product review for both desktop and mobile">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label class="item-header" for="product_id">Product:</label>
+            <select id="product_id" name="product_id" required>
+                <option disabled selected>Select a product...</option>
+            </select>
+
+            <fieldset class="star-ratings">
+                <legend class="item-header">Overall Rating</legend>
+                <input type="radio" id="fivestar" name="stars" value="5" required>
+                <label for="fivestar" aria-label="five star"></label>
+
+                <input type="radio" id="fourstar" name="stars" value="4" required>
+                <label for="fourstar" aria-label="four star"></label>
+
+                <input type="radio" id="threestar" name="stars" value="3" required>
+                <label for="threestar" aria-label="three star"></label>
+
+                <input type="radio" id="twostar" name="stars" value="2" required>
+                <label for="twostar" aria-label="two star"></label>
+
+                <input type="radio" id="onestar" name="stars" value="1" required>
+                <label for="onestar" aria-label="one star"></label>
+            </fieldset>
+
+            <label class="item-header" for="installation_date">Date of Installation:</label>
+            <input type="date" id="installation_date" name="installation_date" required>
+
+            
+            <p class="item-header">Which features did you find useful in the product? <br> (Check all that apply)</p>
+            <div id="features">
+                <input type="checkbox" id="durability" name="durability">
+                <label for="durability">Durability</label>
+                
+                <input type="checkbox" id="ease_use" name="ease_use">
+                <label for="ease_use">Ease of Use</label>
+                
+                <input type="checkbox" id="performance" name="performance">
+                <label for="performance">Performance</label>
+                
+                <input type="checkbox" id="design" name="design">
+                <label for="design">Design</label>
+            </div>
+            
+            <label class="item-header" for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+
+            <label class="item-header" for="user_name">Your name (Optional)</label>
+            <input type="text" id="user_name" name="user_name">
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </main>
+    <footer>
+        <p class="no-margin-para">
+            ©️<span id="currentyear"></span> 💎 Tiffany Voorhees 💎 Utah
+        </p>
+        <p  class="no-margin-para" id="lastModified">
+
+        </p>
+    </footer>
+</body>
+</html>
