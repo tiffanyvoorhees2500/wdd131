@@ -125,7 +125,7 @@ fieldset{
     padding: .5rem 0;
 }
 
-input[type="submit"]{
+button[type="submit"]{
     padding: .5rem .5rem;
     background-color: var(--light-color);
     color: var(--dark-text);
