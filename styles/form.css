@@ -97,12 +97,10 @@ fieldset{
     display: flex;
     align-items: center;
     caret-color: rgba(0,0,0,0);/*remove blinking cursor*/
-    transition: 0.2s ease;
 }
 
 .star-ratings > label:hover{
     color: var(--light-color);
-    transition: 0.2 ease;
 }
 
 .star-ratings label:active::before{
@@ -118,13 +116,6 @@ fieldset{
 
 .star-ratings input:checked ~ label:before{
     content:"\2605";
-}
-
-@-moz-document url-prefix(){
-    .star-ratings input:checked ~ label:before{
-        font-size:36px;
-        line-height: 21px;
-    }
 }
 
 #features{
