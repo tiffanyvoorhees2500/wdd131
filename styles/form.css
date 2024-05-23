@@ -8,7 +8,8 @@
     --light-text: #FFFFFF;
     
     --dark-color: #16697A;
-    --light-color: #489Fb5;
+    --light-color: #489FB5;
+    --light-color-transparent: #489FB530;
 
     --body-background: #489Fb5;
     --main-background: #FFFFFF;
@@ -24,7 +25,6 @@ body{
     font-family: var(--paragraph-font);
     max-width: 500px;
     padding: 1rem;
-    text-align: center;
     margin: 0 auto;
     background-color: var(--body-background);
 }
@@ -36,7 +36,7 @@ main{
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
-    padding: .5rem;
+    padding: 1rem;
 }
 
 h1{
@@ -44,18 +44,22 @@ h1{
     color: var(--light-text);
 }
 
-form{
+.frm-one-column{
     display:grid;
 }
 
-form label{
+.frm-one-column label{
     width: 100%;
     text-align: left;
 }
 
-.item-header{
+.legend-header{
     font-family: var(--heading-font);
     text-align: left;
+}
+
+.require-field::before{
+    content: "* ";
 }
 
 input[type="date"], 
@@ -64,13 +68,25 @@ select,
 textarea{
     width: 100%;
     padding: .8rem .6rem;
-    margin: .5rem 0;
+    margin: 0 0 1rem 0;
     font-family: var(--paragraph-font);
+    border-radius: 5px;
 }
 
-legend{
-    padding-bottom: 1rem;
+input[type="date"]:valid, 
+input[type="text"]:valid,
+select:valid,
+textarea:valid{
+    background-color: none;
 }
+
+input[type="date"]:invalid, 
+input[type="text"]:invalid,
+select:invalid,
+textarea:invalid{
+    background-color: var(--light-color-transparent)
+}
+
 fieldset{
     border:none;
 }
@@ -81,7 +97,7 @@ fieldset{
     align-items: center;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin: .5rem 0;
+    margin: 0 0 1rem 0;
     position: relative;
 }
 
@@ -111,7 +127,7 @@ fieldset{
     content: "\2606";
     position: absolute;
     top:0px;
-    line-height: 10px;
+    line-height: 30px;
 }
 
 .star-ratings input:checked ~ label:before{
@@ -120,9 +136,9 @@ fieldset{
 
 #features{
     display: grid;
-    grid-template-columns: 1.5rem auto;
     gap: .5rem 0;
     padding: .5rem 0;
+    margin: 0 0 1rem 0;
 }
 
 button[type="submit"]{
@@ -132,26 +148,10 @@ button[type="submit"]{
     font-family: var(--paragraph-font);
     font-weight: bold;
     border-color: var(--light-text);
-}
-
-main p{
-    margin-bottom: 1rem;
-}
-
-.btn-done{
-    background-color: var(--light-color);
-    color: var(--dark-text);
-    text-decoration: none;
-    padding: .5rem .5rem;
     border-radius: 5px;
 }
 
-.btn-done:hover{
-    background-color: var(--dark-color);
-    color: var(--light-text);
-}
-
-input[type="submit"]:hover{
+button[type="submit"]:hover{
     background-color: var(--dark-color);
     color: var(--light-text);
 }
@@ -159,5 +159,5 @@ input[type="submit"]:hover{
 footer{
     background-color: var(--dark-color);
     color: var(--light-text);
-    padding: 1rem 0;
+    padding: 1rem;
 }

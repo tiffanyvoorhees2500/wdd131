@@ -19,54 +19,44 @@
         <h1>Product Review</h1>
     </header>
     <main>
-        <form action="review.html" method="get">
-            <label class="item-header" for="product_id">Product:</label>
-            <select id="product_id" name="product_id" required>
-                <option disabled selected value="">Select a product...</option>
-            </select>
+        <form class="frm-one-column" action="review.html" method="get">
+            <label class="legend-header require-field" for="product_id">
+                Product:
+                <select id="product_id" name="product_id" required>
+                    <option disabled selected value="">Select a product...</option>
+                </select>
+            </label>
+            
 
             <fieldset class="star-ratings">
-                <legend class="item-header">Overall Rating</legend>
-                <input type="radio" id="fivestar" name="stars" value="5" required>
-                <label for="fivestar" aria-label="five star"></label>
-
-                <input type="radio" id="fourstar" name="stars" value="4" required>
-                <label for="fourstar" aria-label="four star"></label>
-
-                <input type="radio" id="threestar" name="stars" value="3" required>
-                <label for="threestar" aria-label="three star"></label>
-
-                <input type="radio" id="twostar" name="stars" value="2" required>
-                <label for="twostar" aria-label="two star"></label>
-
-                <input type="radio" id="onestar" name="stars" value="1" required>
-                <label for="onestar" aria-label="one star"></label>
+                <legend class="legend-header require-field">Overall Rating:</legend>
+                <label><input type="radio" id="fivestar" name="stars" value="5" required></label>
+                <label><input type="radio" id="fourstar" name="stars" value="4" required></label>
+                <label><input type="radio" id="threestar" name="stars" value="3" required></label>
+                <label><input type="radio" id="twostar" name="stars" value="2" required></label>
+                <label><input type="radio" id="onestar" name="stars" value="1" required></label>
             </fieldset>
 
-            <label class="item-header" for="installation_date">Date of Installation:</label>
-            <input type="date" id="installation_date" name="installation_date" required>
-
+            <label class="legend-header require-field" for="installation_date">Date of Installation:
+                <input type="date" id="installation_date" name="installation_date" required>
+            </label>
             
-            <p class="item-header">Which features did you find useful in the product? <br> (Check all that apply)</p>
-            <div id="features">
-                <input type="checkbox" id="durability" name="durability">
-                <label for="durability">Durability</label>
-                
-                <input type="checkbox" id="ease_use" name="ease_use">
-                <label for="ease_use">Ease of Use</label>
-                
-                <input type="checkbox" id="performance" name="performance">
-                <label for="performance">Performance</label>
-                
-                <input type="checkbox" id="design" name="design">
-                <label for="design">Design</label>
-            </div>
+            <fieldset id="features">
+                <legend class="legend-header require-field">
+                    Which features did you find useful in the product? 
+                    <br> (Check all that apply)
+                </legend>
+                <label><input type="checkbox" id="design" name="design"> Design</label>
+                <label><input type="checkbox" id="durability" name="durability"> Durability</label>
+                <label><input type="checkbox" id="ease_use" name="ease_use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance"> Performance</label>
+            </fieldset>
+              
+            <label class="legend-header">Written Review (Optional)<textarea id="review" name="review"></textarea></label>
             
-            <label class="item-header" for="review">Written Review (Optional)</label>
-            <textarea id="review" name="review"></textarea>
 
-            <label class="item-header" for="user_name">Your name (Optional)</label>
-            <input type="text" id="user_name" name="user_name">
+            <label class="legend-header" for="user_name">Your name (Optional)<input type="text" id="user_name" name="user_name"></label>
+            
 
             <button type="submit">Submit</button>
 
