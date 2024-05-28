@@ -1,0 +1,48 @@
+#frm-contact{
+    display: grid;
+    max-width: 400px;
+    background-color: var(--accent-color-transparent);
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+#frm-contact label{
+    width: 100%;
+    text-align: left;
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+}
+
+#frm-contact label.required::after{
+    content: "*"
+}
+
+input[type="text"],
+.purpose-section,
+textarea{
+    width: 100%;
+    padding: .8rem .6rem;
+    margin: 0 0 1rem 0;
+    font-family: var(--paragraph-font);
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+input[type="text"]:valid,
+textarea:valid{
+    background-color: var(--light-color);
+}
+
+input[type="text"]:invalid,
+textarea:invalid{
+    background-color: var(--accent-color-transparent);
+    color: var(--dark-color);
+}
+
+
+
+
+
+
+

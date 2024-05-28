@@ -11,29 +11,106 @@
     <link rel="icon" type="images/x-icon" href="images/favicon-32x32.png">
 
     <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/project-lg.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
 
     <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
     <header id="top-header">
         <span class="logo">
-            <a href="#"><img src="images/logo-png.webp" alt="Tiffany Voorhees Logo"></a>
+            <a href="/project"><img src="images/logo-png.webp" alt="Tiffany Voorhees Logo"></a>
         </span>    
         <div id="tools">
             <a title="Click to Login">Log In</a>
         </div>
         <nav>
             <ul class="navigation wrap">
-                <li><a href="/" title="Home page" class="active">Home</a></li>
-                <li><a href="About Me">About Me</a></li>
-                <li><a href="Contact Me">Contact Me</a></li>
-                <li><a href="Schedule a Lesson">Schedule a lesson</a></li>
+                <li><a href="/project" title="Home page" class="active">Home</a></li>
+                <li><a href="/project/about.html">About Me</a></li>
+                <li><a href="project/contact.html">Contact Me</a></li>
+                <li><a href="/project/cirriculum.html">Preferred cirriculum</a></li>
+                <li><a href="project/schedule.html">Schedule a lesson</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <h1>Tiffany Voorhees - Piano Lessons</h1>
+        <div class="hero">
+            <picture class="hero-background">
+                <!-- <source srcset="images/place/washingtondc-hero-lg.webp" media="(min-width: 1090px)"> -->
+                <source srcset="images/piano-hero-lg.jpg" media="(min-width: 724px)">
+                <img src="images/piano-hero_sm.jpg" alt="Piano hero image" width="1200" height="500">
+            </picture>
+            <div class="hero-content">
+                <h1><span>Tiffany Voorhees - Piano Lessons</span><span>Spanish Fork, Utah</span></h1>
+                <a class="action-btn">Book A Lesson</a>
+            </div>
+        </div>
+        <h2>Piano for all levels!</h2>
+        <div class="picture-grid">
+            <div class="picture-grid-item">
+                <figure class="figure-pic">
+                    <img src="images/family-pic_resized.jpg" alt="Tiffany Voorhees" loading="lazy">
+                    <figcaption><h3>A little about me</h3></figcaption>
+                </figure>
+                <p>I started teaching piano while in high school.  I have taken a break from teaching to attend college, and start a family. I am teaching again now that my baby is in all day school.</p>
+                <a href="/project/about.html" class="action-btn">More About Me</a>
+            </div>
+            <div class="picture-grid-item">
+                <figure class="figure-pic">
+                    <img src="images/goal_resized.jpg" alt="Mario picture to represent goal of fun" loading="lazy">
+                    <figcaption><h3>My Goals</h3></figcaption>
+                </figure>
+                <p>My main goal is to make learning piano fun! In the lesson, we will focus on keeping rythm and being able to see a not in the music and then to say and play it as quickly as possible.</p>
+                <a href="/project/cirriculum.html" class="action-btn">See Preferred cirriculum</a>
+            </div>
+            <div class="picture-grid-item">
+                <figure class="figure-pic">
+                    <img src="images/child-at-piano-resized.jpg" alt="Child at piano" loading="lazy">
+                    <figcaption><h3>Lessons</h3></figcaption>
+                </figure>
+                <p>Lessons are 30 minutes long at a rate of $13/lesson.  Lessons will take place in my home in Spanish Fork, Utah.  I am available for lessons M-F from 9AM - 9PM.</p>
+                <a href="/project/schedule.html" class="action-btn">Book a Lesson</a>
+            </div>
+        </div>
+        <hr>
+        <form id="frm-contact">
+            <h2>Send Me a Message</h2>
+            <p>I usually respond within 24 hours.</p>
+
+            <label for="user-name" class="required">Name</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Your name" required>
+
+            <label for="user-email" class="required">Email</label>
+            <input type="text" id="user-email" name="user-email" placeholder="Your email address" required>
+
+            <fieldset class="purpose-section">
+                <legend>Purpose of Contact</legend>
+                <div class="radio-item">
+                    <input type="radio" id="general" name="purpose" value="general" checked>
+                    <label for="general">General Inquiry</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="lesson-question" name="purpose" value="lesson">
+                    <label for="lesson-question">Lesson Question</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="website-suggestion" name="purpose" value="website">
+                    <label for="website-suggestion">Website Suggestion</label>
+                </div>
+            </fieldset>
+
+            <label for="contact-message" class="required">Message</label>
+            <textarea id="contact-message" name="contact-message" rows="5" required></textarea>
+
+            <div class="checkbox-item">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthy newsletter</label>
+            </div>
+
+            <button type="submit" class="action-btn">Send Message</button>
+        </form>
     </main>
     <footer>
         <p class="no-margin-para">

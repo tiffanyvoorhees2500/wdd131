@@ -1,0 +1,62 @@
+
+@media (min-width: 37.5rem){
+    .hero-content h1{
+        font-size: 3rem;
+    }
+    
+    .action-btn{
+        padding: 1rem 2rem;
+    }
+
+    .picture-grid{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-bottom: 2rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .figure-pic img{
+        width:100%;
+        height: auto;
+        max-height: 100px;
+        object-fit: contain;
+    }
+
+    /* About Page */
+    .about-section{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-pics{
+        width: 150px; /* Adjust as needed */
+        margin-right: 20px; /* Space between images and text */
+        margin-bottom: 0;
+        flex-shrink: 0; /* Prevents the image container from shrinking */
+    }
+    
+    .about-pics img{
+        position: absolute;
+    }
+    
+    #young-pic{
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    
+    #now-pic{
+        z-index: 2;
+        top: 50px;
+        left: 75px;
+    }
+    
+    .about-section p{
+        margin: 0;
+        padding: 1rem;
+        align-self: center;
+        min-height: 150px;
+        flex: 1; /* Allows the paragraph to take available space */
+    }
+}
