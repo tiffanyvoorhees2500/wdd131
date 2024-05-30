@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tiffany Voorhees">
+    <meta name="description" content="Piano Lessons in Spanish Fork, UT by Tiffany Voorhees">
+
+    <title>Tiffany Voorhees - Piano Lessons</title>
+    <link rel="icon" type="images/x-icon" href="images/favicon-32x32.png">
+
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/project-lg.css">
+    <link rel="stylesheet" type="text/css" href="styles/schedule.css">
+
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/schedule.js" defer></script>
+</head>
+<body>
+    <header id="top-header">
+        <span class="logo">
+            <a href="../project"><img src="images/logo-png.webp" alt="Tiffany Voorhees Logo"></a>
+        </span>    
+        <nav>
+            <ul class="navigation wrap">
+                <li><a href="../project" title="Home page">Home</a></li>
+                <li><a href="../project/about.html">About Me</a></li>
+                <li><a href="../project/contact.html">Contact Me</a></li>
+                <li><a href="../project/schedule.html" class="active">Schedule a lesson</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Schedule</h1>
+
+        <label for="daySelector">
+            Select a day to view schedule:
+            <select id="daySelector">
+                <option value="" disabled selected>Please select a day...</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+        </label>
+        <hr>
+        <div id="scheduleCard">
+            <p>Please select a day to show schedule.</p>
+        </div>
+    </main>
+    <footer>
+        <p class="no-margin-para">
+            ©️<span id="currentyear"></span> 🎹 Tiffany Voorhees 🎹 Utah
+        </p>
+        <p  class="no-margin-para" id="lastModified">
+
+        </p>
+    </footer>
+</body>
+</html>

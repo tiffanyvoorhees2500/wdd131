@@ -1,0 +1,87 @@
+main{
+    max-width: 450px;
+    min-height: 400px;
+}
+
+select,
+input[type="text"]{
+    width: 100%;
+    padding: .6rem .6rem;
+    font-family: var(--paragraph-font);
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+
+hr{
+    border: 3px solid var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+#scheduleCard{
+    width: 100%;
+    max-width: 400px;
+}
+
+ul{
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+li:nth-child(odd){
+    background-color: var(--accent-color-transparent);
+}
+
+.item-time{
+    font-size: 1.5rem;
+}
+
+li{
+    padding: .3rem;
+}
+
+.item-student-section{
+    display: flex;
+}
+
+.schedule-btn {
+    min-width: 130px;
+    height: 40px;
+    color: var(--dark-text);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid var(--accent-color);
+    background: var(--accent-color);
+    border-radius: 6px;
+  }
+  .schedule-btn:hover {
+    background: var(--light-text);
+    color: var(--accent-color);
+  }
+
+  .delete-btn {
+    min-width: 130px;
+    height: 40px;
+    color: var(--dark-text);
+    padding: 5px 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid var(--accent-color);
+    background: var(--accent-color);
+    border-radius: 6px;
+    margin-left: .5rem;
+  }
+  .delete-btn:hover {
+    background: var(--light-text);
+    color: var(--accent-color);
+  }
